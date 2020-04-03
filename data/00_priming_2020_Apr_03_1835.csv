@@ -1,0 +1,5 @@
+﻿image,pos_trials.thisRepN,pos_trials.thisTrialN,pos_trials.thisN,pos_trials.thisIndex,intro_text.started,intro_text.stopped,fixation_cross.started,fixation_cross.stopped,text.started,text.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,participant,group,order,date,expName,psychopyVersion,frameRate,
+stimuli\primes_neg\image_2.jpg,0,0,0,1,12.553106799954548,None,14.109125899965875,15.623239299980924,,,,,,,00,1,"B,A",2020_Apr_03_1835,priming,2020.1.3,59.23289840473054,
+stimuli\primes_neg\image_1.jpg,0,1,1,0,,,27.06057780003175,28.579958299989812,,,,,,,00,1,"B,A",2020_Apr_03_1835,priming,2020.1.3,59.23289840473054,
+stimuli\primes_neg\image_3.jpg,0,2,2,2,,,40.18775959999766,41.71476919995621,,,,,,,00,1,"B,A",2020_Apr_03_1835,priming,2020.1.3,59.23289840473054,
+,,,,,,,,,52.94535419996828,None,d,1.6726208000909537,52.94535419996828,None,00,1,"B,A",2020_Apr_03_1835,priming,2020.1.3,59.23289840473054,

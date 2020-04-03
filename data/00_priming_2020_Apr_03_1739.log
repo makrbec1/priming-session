@@ -1,0 +1,65 @@
+2.1848 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+11.1036 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001BDA1AAEA20>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001BDA199DA58>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1600,  900]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.1037 	EXP 	window1: recordFrameIntervals = False
+11.2682 	EXP 	window1: recordFrameIntervals = True
+11.4521 	EXP 	window1: recordFrameIntervals = False
+11.8306 	EXP 	Created intro_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='intro_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.8329 	EXP 	Created fixation_cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=0.0001, name='fixation_cross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.04, 0.04]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+11.8356 	EXP 	Created pos_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='pos_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+11.8605 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='WE WERE ON A BREAK!', units='height', win=Window(...), wrapWidth=1)
+11.8625 	EXP 	Created fixation_cross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=0.0001, name='fixation_cross_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.04, 0.04]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+11.8650 	EXP 	Created pos_image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='pos_image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+11.8878 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.9253 	EXP 	intro_text: autoDraw = True
+12.7239 	EXP 	Imported conditionA.xlsx as conditions, 3 conditions, 1 params
+12.7244 	EXP 	Created sequence: random, trialTypes=3, nReps=2, seed=None
+12.7248 	EXP 	New trial (rep=0, index=0): OrderedDict([('image', 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_3.jpg')])
+12.9030 	DATA 	Keypress: m
+12.9117 	EXP 	intro_text: autoDraw = False
+12.9117 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+12.9117 	EXP 	pos_image: image = 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_3.jpg'
+12.9117 	EXP 	fixation_cross: autoDraw = True
+14.4151 	EXP 	pos_image: autoDraw = True
+14.4325 	EXP 	fixation_cross: autoDraw = False
+25.6795 	EXP 	New trial (rep=0, index=1): OrderedDict([('image', 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_2.jpg')])
+25.8186 	EXP 	fixation_cross: autoDraw = False
+25.8186 	EXP 	pos_image: autoDraw = False
+25.8186 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+25.8186 	EXP 	pos_image: image = 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_2.jpg'
+25.8186 	EXP 	fixation_cross: autoDraw = True
+27.3200 	EXP 	pos_image: autoDraw = True
+27.3393 	EXP 	fixation_cross: autoDraw = False
+38.6837 	EXP 	New trial (rep=0, index=2): OrderedDict([('image', 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_1.jpg')])
+38.8627 	EXP 	fixation_cross: autoDraw = False
+38.8627 	EXP 	pos_image: autoDraw = False
+38.8627 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+38.8627 	EXP 	pos_image: image = 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_1.jpg'
+38.8627 	EXP 	fixation_cross: autoDraw = True
+40.3499 	EXP 	pos_image: autoDraw = True
+40.3691 	EXP 	fixation_cross: autoDraw = False
+51.6898 	EXP 	New trial (rep=1, index=0): OrderedDict([('image', 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_3.jpg')])
+51.8893 	EXP 	fixation_cross: autoDraw = False
+51.8893 	EXP 	pos_image: autoDraw = False
+51.8893 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+51.8893 	EXP 	pos_image: image = 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_3.jpg'
+51.8893 	EXP 	fixation_cross: autoDraw = True
+53.3813 	EXP 	pos_image: autoDraw = True
+53.4005 	EXP 	fixation_cross: autoDraw = False
+64.6798 	EXP 	New trial (rep=1, index=1): OrderedDict([('image', 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_1.jpg')])
+64.9142 	EXP 	fixation_cross: autoDraw = False
+64.9142 	EXP 	pos_image: autoDraw = False
+64.9142 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+64.9142 	EXP 	pos_image: image = 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_1.jpg'
+64.9142 	EXP 	fixation_cross: autoDraw = True
+66.4162 	EXP 	pos_image: autoDraw = True
+66.4370 	EXP 	fixation_cross: autoDraw = False
+77.6775 	EXP 	New trial (rep=1, index=2): OrderedDict([('image', 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_2.jpg')])
+77.8590 	EXP 	fixation_cross: autoDraw = False
+77.8590 	EXP 	pos_image: autoDraw = False
+77.8590 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+77.8590 	EXP 	pos_image: image = 'D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\stimuli\\primes_pos\\image_2.jpg'
+77.8590 	EXP 	fixation_cross: autoDraw = True
+79.3446 	EXP 	pos_image: autoDraw = True
+79.3683 	EXP 	fixation_cross: autoDraw = False
+80.1663 	DATA 	Keypress: escape
+80.5767 	EXP 	window1: mouseVisible = True

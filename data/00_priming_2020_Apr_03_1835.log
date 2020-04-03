@@ -1,0 +1,43 @@
+1.6073 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+11.7032 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000022A30329CC0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000022A3022BCC0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1600,  900]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.7033 	EXP 	window1: recordFrameIntervals = False
+11.8685 	EXP 	window1: recordFrameIntervals = True
+12.0548 	EXP 	window1: recordFrameIntervals = False
+12.4494 	EXP 	Created intro_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='intro_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.4526 	EXP 	Created fixation_cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=0.0001, name='fixation_cross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.04, 0.04]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+12.4560 	EXP 	Created pos_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='pos_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+12.4819 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.4859 	EXP 	Created fixation_cross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=0.0001, name='fixation_cross_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.04, 0.04]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+12.4888 	EXP 	Created pos_image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='pos_image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+12.5142 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.5531 	EXP 	intro_text: autoDraw = True
+13.9207 	EXP 	Imported B.xlsx as conditions, 3 conditions, 1 params
+13.9210 	EXP 	Created sequence: random, trialTypes=3, nReps=1, seed=None
+13.9213 	EXP 	New trial (rep=0, index=0): OrderedDict([('image', 'stimuli\\primes_neg\\image_2.jpg')])
+14.0987 	DATA 	Keypress: num_2
+14.1091 	EXP 	intro_text: autoDraw = False
+14.1091 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+14.1091 	EXP 	pos_image: image = 'stimuli\\primes_neg\\image_2.jpg'
+14.1091 	EXP 	fixation_cross: autoDraw = True
+15.6002 	EXP 	pos_image: autoDraw = True
+15.6232 	EXP 	fixation_cross: autoDraw = False
+26.8939 	EXP 	New trial (rep=0, index=1): OrderedDict([('image', 'stimuli\\primes_neg\\image_1.jpg')])
+27.0606 	EXP 	fixation_cross: autoDraw = False
+27.0606 	EXP 	pos_image: autoDraw = False
+27.0606 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+27.0606 	EXP 	pos_image: image = 'stimuli\\primes_neg\\image_1.jpg'
+27.0606 	EXP 	fixation_cross: autoDraw = True
+28.5611 	EXP 	pos_image: autoDraw = True
+28.5800 	EXP 	fixation_cross: autoDraw = False
+39.8965 	EXP 	New trial (rep=0, index=2): OrderedDict([('image', 'stimuli\\primes_neg\\image_3.jpg')])
+40.1878 	EXP 	fixation_cross: autoDraw = False
+40.1878 	EXP 	pos_image: autoDraw = False
+40.1878 	EXP 	pos_image: size = array([2.84444444, 1.77777778])
+40.1878 	EXP 	pos_image: image = 'stimuli\\primes_neg\\image_3.jpg'
+40.1878 	EXP 	fixation_cross: autoDraw = True
+41.6947 	EXP 	pos_image: autoDraw = True
+41.7148 	EXP 	fixation_cross: autoDraw = False
+52.9454 	EXP 	fixation_cross: autoDraw = False
+52.9454 	EXP 	pos_image: autoDraw = False
+52.9454 	EXP 	text: autoDraw = True
+54.9444 	EXP 	window1: mouseVisible = True

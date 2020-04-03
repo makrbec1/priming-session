@@ -1,0 +1,6 @@
+﻿image,pos_trials.thisRepN,pos_trials.thisTrialN,pos_trials.thisN,pos_trials.thisIndex,intro_text.started,intro_text.stopped,fixation_cross.started,fixation_cross.stopped,participant,condition,date,expName,psychopyVersion,frameRate,
+D:\Documents\MSc\sleepysleepy\programming_group\priming-session\stimuli\primes_pos\image_3.jpg,0,0,0,2,11.92530220001936,None,12.911664100014605,14.432497899979353,00,A,2020_Apr_03_1739,priming,2020.1.3,59.85550881638571,
+D:\Documents\MSc\sleepysleepy\programming_group\priming-session\stimuli\primes_pos\image_2.jpg,0,1,1,1,,,25.818582299980335,27.33925039996393,00,A,2020_Apr_03_1739,priming,2020.1.3,59.85550881638571,
+D:\Documents\MSc\sleepysleepy\programming_group\priming-session\stimuli\primes_pos\image_1.jpg,0,2,2,0,,,38.86265689996071,40.36905880004633,00,A,2020_Apr_03_1739,priming,2020.1.3,59.85550881638571,
+D:\Documents\MSc\sleepysleepy\programming_group\priming-session\stimuli\primes_pos\image_3.jpg,1,0,3,2,,,51.88927120005246,53.400540100061335,00,A,2020_Apr_03_1739,priming,2020.1.3,59.85550881638571,
+D:\Documents\MSc\sleepysleepy\programming_group\priming-session\stimuli\primes_pos\image_1.jpg,1,1,4,0,,,64.91423420002684,66.43700030003674,00,A,2020_Apr_03_1739,priming,2020.1.3,59.85550881638571,

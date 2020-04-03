@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.3),
-    on April 03, 2020, at 16:59
+    on April 03, 2020, at 18:40
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -37,7 +37,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2020.1.3'
 expName = 'priming'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'condition': ''}
+expInfo = {'participant': '00', 'group': '1', 'order': 'A'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -91,8 +91,8 @@ intro_text = visual.TextStim(win=win, name='intro_text',
     depth=0.0);
 key_resp = keyboard.Keyboard()
 
-# Initialize components for Routine "pos_images"
-pos_imagesClock = core.Clock()
+# Initialize components for Routine "first_block_images"
+first_block_imagesClock = core.Clock()
 
 
 
@@ -115,7 +115,7 @@ pos_image = visual.ImageStim(
 # Initialize components for Routine "break_3"
 break_3Clock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='WE WERE ON A BREAK!',
+    text='WE WERE ON A BREAK!\n\npress any key to continue',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -123,8 +123,8 @@ text = visual.TextStim(win=win, name='text',
     depth=0.0);
 key_resp_2 = keyboard.Keyboard()
 
-# Initialize components for Routine "neg_images"
-neg_imagesClock = core.Clock()
+# Initialize components for Routine "second_block_images"
+second_block_imagesClock = core.Clock()
 fixation_cross_2 = visual.ShapeStim(
     win=win, name='fixation_cross_2', vertices='cross',
     size=(0.04, 0.04),
@@ -244,9 +244,9 @@ thisExp.addData('intro_text.stopped', intro_text.tStopRefresh)
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-pos_trials = data.TrialHandler(nReps=2, method='random', 
+pos_trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('conditionA.xlsx'),
+    trialList=data.importConditions(expInfo['order'][0] + '.xlsx'),
     seed=None, name='pos_trials')
 thisExp.addLoop(pos_trials)  # add the loop to the experiment
 thisPos_trial = pos_trials.trialList[0]  # so we can initialise stimuli with some values
@@ -262,17 +262,14 @@ for thisPos_trial in pos_trials:
         for paramName in thisPos_trial:
             exec('{} = thisPos_trial[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "pos_images"-------
+    # ------Prepare to start Routine "first_block_images"-------
     continueRoutine = True
     routineTimer.add(13.000000)
     # update component parameters for each repeat
-    # for the "observe" routine:
-    curr_pos_img = 'D:\Documents\MSc\sleepysleepy\programming_group\priming-session\stimuli\primes_pos\\' + pos_img.pop() # get the next value
-    thisExp.addData('current_pos_file', curr_pos_img) # record it in the data
-    pos_image.setImage(curr_pos_img)
+    pos_image.setImage(image)
     # keep track of which components have finished
-    pos_imagesComponents = [fixation_cross, pos_image]
-    for thisComponent in pos_imagesComponents:
+    first_block_imagesComponents = [fixation_cross, pos_image]
+    for thisComponent in first_block_imagesComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -282,14 +279,14 @@ for thisPos_trial in pos_trials:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    pos_imagesClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    first_block_imagesClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "pos_images"-------
+    # -------Run Routine "first_block_images"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
-        t = pos_imagesClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=pos_imagesClock)
+        t = first_block_imagesClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=first_block_imagesClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -336,7 +333,7 @@ for thisPos_trial in pos_trials:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in pos_imagesComponents:
+        for thisComponent in first_block_imagesComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -345,15 +342,15 @@ for thisPos_trial in pos_trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "pos_images"-------
-    for thisComponent in pos_imagesComponents:
+    # -------Ending Routine "first_block_images"-------
+    for thisComponent in first_block_imagesComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     pos_trials.addData('fixation_cross.started', fixation_cross.tStartRefresh)
     pos_trials.addData('fixation_cross.stopped', fixation_cross.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 2 repeats of 'pos_trials'
+# completed 1 repeats of 'pos_trials'
 
 # get names of stimulus parameters
 if pos_trials.trialList in ([], [None], None):
@@ -462,9 +459,9 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-neg_trials = data.TrialHandler(nReps=2, method='random', 
+neg_trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('conditionB.xlsx'),
+    trialList=data.importConditions(expInfo['order'][2] + '.xlsx'),
     seed=None, name='neg_trials')
 thisExp.addLoop(neg_trials)  # add the loop to the experiment
 thisNeg_trial = neg_trials.trialList[0]  # so we can initialise stimuli with some values
@@ -480,18 +477,14 @@ for thisNeg_trial in neg_trials:
         for paramName in thisNeg_trial:
             exec('{} = thisNeg_trial[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "neg_images"-------
+    # ------Prepare to start Routine "second_block_images"-------
     continueRoutine = True
     routineTimer.add(13.000000)
     # update component parameters for each repeat
-    # for the "observe" routine:
-    curr_neg_img = 'D:\Documents\MSc\sleepysleepy\programming_group\priming-session\stimuli\primes_neg\\' + neg_img.pop() # get the next value
-    thisExp.addData('current_neg_file', curr_neg_img) # record it in the data
-    
-    pos_image_2.setImage(curr_neg_img)
+    pos_image_2.setImage(image)
     # keep track of which components have finished
-    neg_imagesComponents = [fixation_cross_2, pos_image_2]
-    for thisComponent in neg_imagesComponents:
+    second_block_imagesComponents = [fixation_cross_2, pos_image_2]
+    for thisComponent in second_block_imagesComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -501,14 +494,14 @@ for thisNeg_trial in neg_trials:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    neg_imagesClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    second_block_imagesClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "neg_images"-------
+    # -------Run Routine "second_block_images"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
-        t = neg_imagesClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=neg_imagesClock)
+        t = second_block_imagesClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=second_block_imagesClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -555,7 +548,7 @@ for thisNeg_trial in neg_trials:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in neg_imagesComponents:
+        for thisComponent in second_block_imagesComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -564,15 +557,15 @@ for thisNeg_trial in neg_trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "neg_images"-------
-    for thisComponent in neg_imagesComponents:
+    # -------Ending Routine "second_block_images"-------
+    for thisComponent in second_block_imagesComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     neg_trials.addData('fixation_cross_2.started', fixation_cross_2.tStartRefresh)
     neg_trials.addData('fixation_cross_2.stopped', fixation_cross_2.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 2 repeats of 'neg_trials'
+# completed 1 repeats of 'neg_trials'
 
 # get names of stimulus parameters
 if neg_trials.trialList in ([], [None], None):
