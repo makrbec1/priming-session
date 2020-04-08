@@ -1,15 +1,29 @@
 # priming-session
-priming session python script for Sleep and Dream Study Project at Universität Osnabrück
+priming session python script for Sleep and Dream Study Project at Universität Osnabrück, 2020
 
-# input
-subject number
+## input
+#### based on the randomization.csv file including all subject numbers and randomized block orders etc.
+subject number (two ciphers)
 group - 1, 2 or 3
 order - order in which positive / negative image block is displayed. Enter in the following format: 'A,B' or 'B,A' (without the quotes, no space after comma)
+  A = block of positive images
+  B = block of negative images
+  C = block of neutral images
 
-# output
-log file - logs if something went wrong with the experiment, can delete
-all subject overview file - includes subject number, group number and the block order
-detailed individual subject file - subject number, group number, block order, order of the images within each block
+## output
 
-# Created using Psychopy
+#### all subject overview file
+  - can be found in priming-session/all_participant_summary.csv
+  - includes subject number, group number and the block order
+
+#### detailed individual subject .csv file
+  - can be found in priming-session/data
+  - includes subject number, group number, block order, order of the images within each block, etc.
+
+#### psydata file
+  - can be found in priming-session/data
+  - includes experiment information
+
+
+### Created using Psychopy
 Peirce, J. W., Gray, J. R., Simpson, S., MacAskill, M. R., Höchenberger, R., Sogo, H., Kastman, E., Lindeløv, J. (2019). PsychoPy2: experiments in behavior made easy. Behavior Research Methods. 10.3758/s13428-018-01193-y

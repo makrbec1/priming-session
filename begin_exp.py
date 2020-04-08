@@ -1,6 +1,30 @@
 import random
 import pandas as pd
 
+# WRITE TO CSV FILE
+import csv
+
+# taking the dialog window input from this session
+participant = str(expInfo['participant'])
+order = expInfo['order']
+group = str(expInfo['group'])
+
+sum_info = participant, group, order
+sum_info = list(sum_info)
+
+# naming the csv file
+filename = "all_participant_summary.csv"
+
+# opening the all_participant_summary.csv file
+with open(filename, 'a') as csvfile:
+    csvwriter = csv.writer(csvfile)
+
+# writing the information from this session into the csv file
+    csvwriter.writerow(sum_info)
+
+#    csvfile.write(sum_info)
+
+
 #DELETE (simulated input)
 # find 'uncomment' and uncomment when in psychopy
 condition = 11

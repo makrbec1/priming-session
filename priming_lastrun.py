@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.3),
-    on April 03, 2020, at 18:40
+    on April 08, 2020, at 21:11
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -37,7 +37,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2020.1.3'
 expName = 'priming'  # from the Builder filename that created this script
-expInfo = {'participant': '00', 'group': '1', 'order': 'A'}
+expInfo = {'participant': '00', 'group': '1', 'order': 'A,A'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -54,8 +54,6 @@ thisExp = data.ExperimentHandler(name=expName, version='',
     originPath='D:\\Documents\\MSc\\sleepysleepy\\programming_group\\priming-session\\priming_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
-# save a log file for detail verbose info
-logFile = logging.LogFile(filename+'.log', level=logging.EXP)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
 
 endExpNow = False  # flag for 'escape' or other condition => quit the exp
@@ -90,19 +88,35 @@ intro_text = visual.TextStim(win=win, name='intro_text',
     languageStyle='LTR',
     depth=0.0);
 key_resp = keyboard.Keyboard()
+import csv
+
+# taking the dialog window input from this session
+participant = str(expInfo['participant'])
+order = expInfo['order']
+group = str(expInfo['group'])
+
+sum_info = participant, group, order
+sum_info = list(sum_info)
+
+# naming the csv file
+all_sum_csv = "all_participant_summary.csv"
+
+# opening the all_participant_summary.csv file
+with open(all_sum_csv, 'a', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile)
+
+# writing the information from this session into the csv file
+    csvwriter.writerow(sum_info)
 
 # Initialize components for Routine "first_block_images"
 first_block_imagesClock = core.Clock()
-
-
-
 fixation_cross = visual.ShapeStim(
     win=win, name='fixation_cross', vertices='cross',
     size=(0.04, 0.04),
     ori=0, pos=(0, 0),
     lineWidth=0.0001, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
+    opacity=1, depth=0.0, interpolate=True)
 pos_image = visual.ImageStim(
     win=win,
     name='pos_image', 
@@ -110,7 +124,7 @@ pos_image = visual.ImageStim(
     ori=0, pos=(0, 0), size=None,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
+    texRes=128, interpolate=True, depth=-1.0)
 
 # Initialize components for Routine "break_3"
 break_3Clock = core.Clock()
@@ -131,7 +145,7 @@ fixation_cross_2 = visual.ShapeStim(
     ori=0, pos=(0, 0),
     lineWidth=0.0001, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
+    opacity=1, depth=0.0, interpolate=True)
 pos_image_2 = visual.ImageStim(
     win=win,
     name='pos_image_2', 
@@ -139,7 +153,7 @@ pos_image_2 = visual.ImageStim(
     ori=0, pos=(0, 0), size=None,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
+    texRes=128, interpolate=True, depth=-1.0)
 
 # Initialize components for Routine "end"
 endClock = core.Clock()
@@ -352,15 +366,6 @@ for thisPos_trial in pos_trials:
     
 # completed 1 repeats of 'pos_trials'
 
-# get names of stimulus parameters
-if pos_trials.trialList in ([], [None], None):
-    params = []
-else:
-    params = pos_trials.trialList[0].keys()
-# save data for this loop
-pos_trials.saveAsText(filename + 'pos_trials.csv', delim=',',
-    stimOut=params,
-    dataOut=['n','all_mean','all_std', 'all_raw'])
 
 # ------Prepare to start Routine "break_3"-------
 continueRoutine = True
@@ -567,15 +572,6 @@ for thisNeg_trial in neg_trials:
     
 # completed 1 repeats of 'neg_trials'
 
-# get names of stimulus parameters
-if neg_trials.trialList in ([], [None], None):
-    params = []
-else:
-    params = neg_trials.trialList[0].keys()
-# save data for this loop
-neg_trials.saveAsText(filename + 'neg_trials.csv', delim=',',
-    stimOut=params,
-    dataOut=['n','all_mean','all_std', 'all_raw'])
 
 # ------Prepare to start Routine "end"-------
 continueRoutine = True
@@ -680,7 +676,6 @@ win.flip()
 # these shouldn't be strictly necessary (should auto-save)
 thisExp.saveAsWideText(filename+'.csv')
 thisExp.saveAsPickle(filename)
-logging.flush()
 # make sure everything is closed down
 thisExp.abort()  # or data files will save again on exit
 win.close()
