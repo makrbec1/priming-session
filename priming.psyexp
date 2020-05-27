@@ -369,6 +369,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="second_block_images"/>
+    <Routine name="rating"/>
     <LoopTerminator name="neg_trials"/>
     <Routine name="end"/>
   </Flow>
