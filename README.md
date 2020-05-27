@@ -31,8 +31,8 @@ Author: Marketa Becevova
 - priming-session:
   - priming.psyexp = main experimental file. Opens priming session in psychopy environment
   - priming.py = python code of the priming session. Run through writing the following in the cmd and pressing enter after each line
-      cd /d <path to the priming-session folder>
-      python priming.py
+  \n cd /d <path to the priming-session folder>
+  \n python priming.py
   - all_participant_summary.csv = overview of all subject data, see description above in 'output'
 - priming-session/data: for each participant/session there is a .csv and .psydat file
 - priming-session/experiment: contains all condition files
