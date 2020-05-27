@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.3),
-    on April 08, 2020, at 21:11
+    on May 27, 2020, at 17:17
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -64,7 +64,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 # Setup the Window
 win = visual.Window(
     size=[1600, 900], fullscr=True, screen=0, 
-    winType='pyglet', allowGUI=False, allowStencil=False,
+    winType='pyglet', allowGUI=True, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
@@ -81,9 +81,9 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "intro"
 introClock = core.Clock()
 intro_text = visual.TextStim(win=win, name='intro_text',
-    text='Hello there ;)\n\nhere goes the introduction text.\n\nplease press any key to continue',
+    text='Dear Participant,\n\nWithin next 25 minutes you will be presented with 2 sets of pictures: 10 min session, then a short break (approximately 5 min) and another 10 min session.\n\nDuring the sessions all your attention is required, therefore, we kindly ask you to leave your phone away and do all other things you need before the first session starts of during the break.\n\nKeep calm, breathe, relax and observe the pictures you are presented with starting form the screen center.\n\nIf you feel discomfort, please, inform the experimenter near you as soon as possible.\n\nPress any key to continue.\n\nAll the best,\nStudy Project “Sleep and Dream”',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.035, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -126,12 +126,23 @@ pos_image = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
 
+# Initialize components for Routine "rating"
+ratingClock = core.Clock()
+rating_2 = visual.RatingScale(win=win, name='rating_2', marker='circle', size=1.0, pos=[0.0, -0.4], low=1, high=10, labels=['negative', 'positive'], scale='neutral')
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='Please, rate the previous image',
+    font='Arial',
+    pos=(0, 0), height=0.035, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
 # Initialize components for Routine "break_3"
 break_3Clock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='WE WERE ON A BREAK!\n\npress any key to continue',
+    text="This is the end of the first block.\n\nTake a short break and press any key to continue when you're ready",
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.035, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -158,9 +169,9 @@ pos_image_2 = visual.ImageStim(
 # Initialize components for Routine "end"
 endClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='Thank you for participating,\n\nthis is the end of this part of the measurement\n\npress any key to end the session\n',
+    text='Thank you for participating,\n\nthis is the end of this part of the measurement.\n\nPlease, inform the experimenter.\n\nPress any key to end the session\n',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.035, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -260,7 +271,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 pos_trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions(expInfo['order'][0] + '.xlsx'),
+    trialList=data.importConditions("experiment/"+expInfo['order'][0] + '.xlsx'),
     seed=None, name='pos_trials')
 thisExp.addLoop(pos_trials)  # add the loop to the experiment
 thisPos_trial = pos_trials.trialList[0]  # so we can initialise stimuli with some values
@@ -362,6 +373,83 @@ for thisPos_trial in pos_trials:
             thisComponent.setAutoDraw(False)
     pos_trials.addData('fixation_cross.started', fixation_cross.tStartRefresh)
     pos_trials.addData('fixation_cross.stopped', fixation_cross.tStopRefresh)
+    
+    # ------Prepare to start Routine "rating"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    rating_2.reset()
+    # keep track of which components have finished
+    ratingComponents = [rating_2, text_3]
+    for thisComponent in ratingComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    ratingClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "rating"-------
+    while continueRoutine:
+        # get current time
+        t = ratingClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=ratingClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        # *rating_2* updates
+        if rating_2.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            rating_2.frameNStart = frameN  # exact frame index
+            rating_2.tStart = t  # local t and not account for scr refresh
+            rating_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(rating_2, 'tStartRefresh')  # time at next scr refresh
+            rating_2.setAutoDraw(True)
+        continueRoutine &= rating_2.noResponse  # a response ends the trial
+        
+        # *text_3* updates
+        if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_3.frameNStart = frameN  # exact frame index
+            text_3.tStart = t  # local t and not account for scr refresh
+            text_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+            text_3.setAutoDraw(True)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in ratingComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "rating"-------
+    for thisComponent in ratingComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store data for pos_trials (TrialHandler)
+    pos_trials.addData('rating_2.response', rating_2.getRating())
+    pos_trials.addData('rating_2.rt', rating_2.getRT())
+    pos_trials.addData('rating_2.started', rating_2.tStart)
+    pos_trials.addData('rating_2.stopped', rating_2.tStop)
+    pos_trials.addData('text_3.started', text_3.tStartRefresh)
+    pos_trials.addData('text_3.stopped', text_3.tStopRefresh)
+    # the Routine "rating" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 1 repeats of 'pos_trials'
@@ -466,7 +554,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 neg_trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions(expInfo['order'][2] + '.xlsx'),
+    trialList=data.importConditions("experiment/"+expInfo['order'][2] + '.xlsx'),
     seed=None, name='neg_trials')
 thisExp.addLoop(neg_trials)  # add the loop to the experiment
 thisNeg_trial = neg_trials.trialList[0]  # so we can initialise stimuli with some values
