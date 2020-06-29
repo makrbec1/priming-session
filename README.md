@@ -1,7 +1,7 @@
 # priming-session
 priming session python script for Sleep and Dream Study Project at Universität Osnabrück, 2020
 
-Author: Marketa Becevova
+Author: Marketa Becevova  
 Changes (priming timing and rating): Karen Pawlik
 
 ## input
