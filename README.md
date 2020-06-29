@@ -2,7 +2,7 @@
 priming session python script for Sleep and Dream Study Project at Universität Osnabrück, 2020
 
 Author: Marketa Becevova  
-Changes (priming timing and rating): Karen Pawlik
+Changes (priming timing and rating) modified_priming_24_06_2020.psyexp: Karen Pawlik
 
 ## input
 #### based on the randomization.csv file including all subject numbers and randomized block orders etc.
